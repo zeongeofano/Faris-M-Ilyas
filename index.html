@@ -3,103 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faris M Ilyas | Digital Portfolio & CV</title>
+    <title>Faris M Ilyas | Portofolio & CV Digital</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #94a3b8; }
+        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #94a3b8; scroll-behavior: smooth; }
         h1, h2, h3 { font-family: 'Urbanist', sans-serif; color: #fff; }
-        .gradient-text { background: linear-gradient(90deg, #3b82f6, #2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card { background: rgba(30, 41, 59, 0.3); border: 1px solid rgba(59, 130, 246, 0.1); transition: all 0.3s ease; }
-        .card:hover { border-color: #3b82f6; transform: translateY(-5px); }
+        .glow-text { text-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+        .gradient-blue { background: linear-gradient(90deg, #3b82f6, #2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-card { background: rgba(30, 41, 59, 0.4); border: 1px solid rgba(59, 130, 246, 0.2); backdrop-filter: blur(10px); }
+        .nav-link:hover { color: #3b82f6; transition: 0.3s; }
     </style>
 </head>
-<body class="leading-relaxed">
+<body>
 
-    <header class="min-h-[80vh] flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]"></div>
-        
-        <h1 class="text-6xl md:text-8xl font-bold mb-4 tracking-tighter uppercase">
-            Faris M <span class="gradient-text">Ilyas</span>
+    <nav class="fixed w-full z-50 bg-[#020617]/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter text-white">FARIS<span class="text-blue-500">.</span></div>
+            <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#home" class="nav-link text-white">Beranda</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#experience" class="nav-link">Pengalaman</a>
+                <a href="#contact" class="nav-link text-blue-500">Hubungi</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+        <div class="absolute top-20 w-72 h-72 bg-blue-600/20 rounded-full blur-[120px] -z-10"></div>
+        <p class="text-blue-500 tracking-[0.5em] mb-4 text-sm font-bold uppercase">Project Portfolio // 2026</p>
+        <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tighter uppercase leading-none">
+            FARIS M <br> <span class="gradient-blue glow-text">ILYAS</span>
         </h1>
-        <p class="text-xl md:text-2xl font-light tracking-widest text-blue-400 mb-8">ANALYZE. CODE. EXECUTE.</p>
-        
-        <div class="max-w-2xl text-lg text-gray-400 mb-10">
-            Seorang pengelola infrastruktur digital dan komunitas yang berfokus pada detail. 
-            Ahli dalam manajemen server, optimasi sistem, dan pengembangan web modern.
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-10 font-light">
+            ANALYZE. CODE. EXECUTE. <br>
+            Spesialis Infrastruktur Digital & Founder <span class="text-white font-semibold">ZNFX Ecosystem</span>.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://znfx-web.vercel.app/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold transition flex items-center gap-2">
+                <i class="fa-solid fa-globe"></i> Kunjungi ZNFX
+            </a>
+            <a href="#experience" class="border border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-full font-bold transition">
+                Lihat Pengalaman
+            </a>
         </div>
+    </section>
 
-        <div class="flex gap-4">
-            <a href="#cv" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition">Lihat CV Digital</a>
-            <a href="https://znfx-web.vercel.app/" class="border border-white/20 hover:bg-white/10 text-white px-8 py-3 rounded-full font-semibold transition">Kunjungi ZNFX</a>
-        </div>
-    </header>
-
-    <section id="cv" class="max-w-6xl mx-auto py-24 px-6 grid md:grid-cols-3 gap-16">
-        
-        <div class="space-y-12">
-            <div>
-                <h3 class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-6">Butiran Perhubungan</h3>
-                <ul class="space-y-3 text-sm">
-                    <li>📍 Majalengka, Jawa Barat</li>
-                    <li>📱 0821-1826-8763</li>
-                    <li>🌐 <a href="https://znfx-web.vercel.app/" class="hover:text-blue-400 underline">znfx-web.vercel.app</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-6">Kemahiran Utama</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-white/5 rounded border border-white/10 text-xs">Web Development</span>
-                    <span class="px-3 py-1 bg-white/5 rounded border border-white/10 text-xs">Server Management</span>
-                    <span class="px-3 py-1 bg-white/5 rounded border border-white/10 text-xs">Next.js & Tailwind</span>
-                    <span class="px-3 py-1 bg-white/5 rounded border border-white/10 text-xs">Linux Infrastructure</span>
-                    <span class="px-3 py-1 bg-white/5 rounded border border-white/10 text-xs">Financial Analysis</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="md:col-span-2 space-y-16">
-            
-            <div>
-                <h2 class="text-3xl font-bold mb-8 flex items-center">
-                    <span class="w-8 h-1 bg-blue-600 mr-4"></span> Pengalaman Kerja
-                </h2>
-                <div class="space-y-10 border-l border-white/10 pl-8 relative">
-                    <div class="relative">
-                        <div class="absolute -left-[37px] top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-[#020617]"></div>
-                        <h4 class="text-xl font-bold text-white">Founder & Lead Developer</h4>
-                        <p class="text-blue-400 text-sm mb-3">ZNFX Ecosystem | 2024 - Sekarang</p>
-                        <p class="text-gray-400 text-sm">Membangun platform analisis finansial dan komunitas digital dari nol menggunakan Vercel dan framework web modern.</p>
+    <section id="about" class="max-w-6xl mx-auto py-24 px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="glass-card p-10 rounded-2xl">
+                <h2 class="text-3xl font-bold mb-6 italic">"Hasil kerja nyata adalah bukti tunggal dari sebuah kompetensi."</h2>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Seorang pengelola infrastruktur digital dan komunitas yang berorientasi pada detail. Memiliki pengalaman dalam manajemen server, optimasi sistem, dan penyelesaian masalah teknis (troubleshooting).
+                </p>
+                <div class="flex gap-6">
+                    <div>
+                        <p class="text-2xl font-bold text-white">99.9%</p>
+                        <p class="text-xs uppercase text-blue-500">Uptime Server</p>
                     </div>
-                    <div class="relative">
-                        <div class="absolute -left-[37px] top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-[#020617]"></div>
-                        <h4 class="text-xl font-bold text-white">Technical Server Administrator</h4>
-                        <p class="text-blue-400 text-sm mb-3">Community Infrastructure | 2023 - Sekarang</p>
-                        <p class="text-gray-400 text-sm">Mengelola infrastruktur server dengan fokus pada uptime 99.9% dan keamanan sistem harian.</p>
+                    <div>
+                        <p class="text-2xl font-bold text-white">Live</p>
+                        <p class="text-xs uppercase text-blue-500">Web Ecosystem</p>
                     </div>
                 </div>
             </div>
-
             <div>
-                <h2 class="text-3xl font-bold mb-8 flex items-center">
-                    <span class="w-8 h-1 bg-blue-600 mr-4"></span> Kelayakan
-                </h2>
-                <div class="card p-6 rounded-xl">
-                    <h4 class="text-white font-bold">Pendidikan Berbasis Keahlian (Otodidak)</h4>
-                    <p class="text-sm text-gray-400 mt-1">Fokus pada Web Development & Manajemen Sistem</p>
-                    <p class="mt-4 text-sm text-gray-400 italic">
-                        "Saya membuktikan kompetensi saya melalui hasil kerja nyata dan proyek yang aktif berjalan, 
-                        lebih dari sekadar dokumen formal."
+                <h3 class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-4">Profil & Kelayakan</h3>
+                <h2 class="text-4xl font-bold mb-6 text-white">Membangun Tanpa Batas Formal.</h2>
+                <p class="mb-6">Meskipun menempuh jalur pendidikan mandiri (otodidak), saya fokus pada penguasaan teknologi web modern dan administrasi sistem yang skalabel.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-blue-600/20 rounded flex items-center justify-center text-blue-500"><i class="fa-solid fa-code"></i></div>
+                        <p class="text-white font-medium">Web Development (Next.js, Tailwind)</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-blue-600/20 rounded flex items-center justify-center text-blue-500"><i class="fa-solid fa-server"></i></div>
+                        <p class="text-white font-medium">Server Infrastructure (Linux, Paper/Spigot)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="max-w-6xl mx-auto py-24 px-6">
+        <h3 class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-12 text-center">Curriculum Vitae</h3>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <h4 class="text-2xl font-bold flex items-center gap-3"><i class="fa-solid fa-briefcase text-blue-500"></i> Pengalaman Kerja</h4>
+                
+                <div class="border-l-2 border-blue-600/30 pl-6 relative space-y-10">
+                    <div class="relative">
+                        <div class="absolute -left-[33px] top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-[#020617]"></div>
+                        <h5 class="text-white font-bold text-lg">Founder & Lead Developer</h5>
+                        <p class="text-blue-500 text-sm mb-2">ZNFX Ecosystem | 2024 - Sekarang</p>
+                        <p class="text-sm text-gray-400">Membangun dan mengelola platform landing page komunitas menggunakan framework modern dan integrasi Vercel.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[33px] top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-[#020617]"></div>
+                        <h5 class="text-white font-bold text-lg">Technical Server Administrator</h5>
+                        <p class="text-blue-500 text-sm mb-2">Community Project | 2023 - Sekarang</p>
+                        <p class="text-sm text-gray-400">Bertanggung jawab atas stabilitas server harian, optimasi plugin, dan keamanan infrastruktur digital harian.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-12">
+                <div class="glass-card p-8 rounded-xl">
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Hubungi Saya</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-blue-500"></i> Panyingkiran, Kabupaten Majalengka</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-blue-500"></i> 0821-1826-8763</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-blue-500"></i> faris.ilyas@znfx.tech</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-link text-blue-500"></i> <a href="https://znfx-web.vercel.app/" target="_blank" class="underline hover:text-blue-400 font-bold">znfx-web.vercel.app</a></li>
+                    </ul>
+                </div>
+                
+                <div class="glass-card p-8 rounded-xl border-blue-500/50">
+                    <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-sm text-blue-500">Status Pendidikan</h4>
+                    <p class="text-sm text-gray-300"><strong>Pendidikan Berbasis Keahlian (Otodidak)</strong></p>
+                    <p class="text-xs text-gray-500 mt-2 italic leading-relaxed">
+                        Fokus pada riset mandiri dan pengembangan proyek nyata di bidang Web Development & System Administration.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-white/5 text-center text-xs tracking-widest text-gray-600">
-        &copy; 2026 FARIS M ILYAS. DEVELOPED WITH PRIDE.
+    <footer id="contact" class="py-20 border-t border-white/5 text-center">
+        <h2 class="text-2xl font-bold text-white mb-4">Siap untuk Berkolaborasi?</h2>
+        <p class="text-gray-500 mb-8">Kirim pesan jika Anda membutuhkan bantuan teknis atau ingin membangun ekosistem digital bersama.</p>
+        <a href="mailto:faris.ilyas@znfx.tech" class="text-blue-500 font-bold hover:underline">faris.ilyas@znfx.tech</a>
+        <div class="mt-12 text-[10px] tracking-[0.4em] text-gray-700 uppercase">
+            &copy; 2026 Faris M Ilyas // Analyze. Code. Execute.
+        </div>
     </footer>
 
 </body>
-                                                                                                                              </html>
+    </html>
